@@ -12,6 +12,12 @@
 - `analysis.ipynb` 
     - Analysis of the PTM label distribution.
 
+## Usage
+
+```
+python extract_ptm_labels.py
+python label_preprocess.py
+```
 
 ## Future Work
 - Expand the data sources to include the Uniprot-trembl database, which contains a larger number of unreviewed annotations.
