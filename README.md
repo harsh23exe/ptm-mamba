@@ -41,7 +41,7 @@ pip install -e protein_lm/tokenizer/rust_trie
 
 ## Data
 
-We collect protein sequences and their PTM annotations from Uniprot-Swissprot. The PTM annotations are represented as tokens and used to replace the corresponding amino acids. The data can be downloaded from [here](https://drive.google.com/file/d/151KUp79tgBxphoIky1-ohyuvzIS1gtNS/view?usp=drive_link). Please place the data in  `protein_lm/dataset/`.
+We collect protein sequences and their PTM annotations from Uniprot-Swissprot. The PTM annotations are represented as tokens and used to replace the corresponding amino acids. The data can be downloaded from [here](https://drive.google.com/file/d/151KUp79tgBxphoIky1-ohyuvzIS1gtNS/view?usp=drive_link). Please place the data in  `protein_lm/dataset/`. Additionally, if you care about the source and how it's been processed, we open the data preprocessing code at `./ptm_data_preprocessing`. You can reproduce the extract same data from there.
 
 ## Configs
 
