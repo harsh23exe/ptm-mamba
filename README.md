@@ -2,7 +2,7 @@
 
 # PTM-Mamba
 
-A PTM-Aware Protein Language Model with Bidirectional Gated Mamba Blocks
+A PTM-Aware Protein Language Model with Bidirectional Gated Mamba Blocks, Accepted in Nature Method
 
 [[Huggingface](https://huggingface.co/ChatterjeeLab/PTM-Mamba)]    [[Github](https://github.com/programmablebio/ptm-mamba)]   [[Paper](https://www.nature.com/articles/s41592-025-02656-9)]
 
