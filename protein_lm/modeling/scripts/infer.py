@@ -1,3 +1,6 @@
+import os
+import triton
+import triton.common.build
 from collections import namedtuple
 import torch
 import esm
@@ -5,6 +8,21 @@ from typing import List, Union, Optional
 from protein_lm.modeling.scripts.train import compute_esm_embedding, load_ckpt, make_esm_input_ids
 from protein_lm.tokenizer.tokenizer import PTMTokenizer
 from torch.nn.utils.rnn import pad_sequence
+
+_original_libcuda_dirs = triton.common.build.libcuda_dirs
+
+def patched_libcuda_dirs():
+    try:
+        dirs = _original_libcuda_dirs()
+    except AssertionError:
+        dirs = []
+    user_dir = os.path.expanduser('~/my_libs')
+    if user_dir not in dirs:
+        dirs.append(user_dir)
+    return dirs
+
+triton.common.build.libcuda_dirs = patched_libcuda_dirs
+print("Triton patch applied: libcuda_dirs patched to include ~/my_libs.")
 
 Output = namedtuple("output", ["logits", "hidden_states"])
 
@@ -76,9 +94,20 @@ class PTMMamba:
         
         
 if __name__ == "__main__":
-    ckpt_path = "ckpt/bi_mamba-esm-ptm_token_input/best.ckpt"
+    ckpt_path = "ckpt/best.ckpt"
     mamba = PTMMamba(ckpt_path,device='cuda:0')
-    seq = '<N-acetylmethionine>EAD<Phosphoserine>PAGPGAPEPLAEGAAAEFS<Phosphoserine>LLRRIKGKLFTWNILKTIALGQMLSLCICGTAITSQYLAERYKVNTPMLQSFINYCLLFLIYTVMLAFRSGSDNLLVILKRKWWKYILLGLADVEANYVIVRAYQYTTLTSVQLLDCFGIPVLMALSWFILHARYRVIHFIAVAVCLLGVGTMVGADILAGREDNSGSDVLIGDILVLLGASLYAISNVCEEYIVKKLSRQEFLGMVGLFGTIISGIQLLIVEYKDIASIHWDWKIALLFVAFALCMFCLYSFMPLVIKVTSATSVNLGILTADLYSLFVGLFLFGYKFSGLYILSFTVIMVGFILYCSTPTRTAEPAESSVPPVTSIGIDNLGLKLEENLQETH<Phosphoserine>AVL'
+    # seq = '<N-acetylmethionine>EAD<Phosphoserine>PAGPGAPEPLAEGAAAEFS<Phosphoserine>LLRRIKGKLFTWNILKTIALGQMLSLCICGTAITSQYLAERYKVNTPMLQSFINYCLLFLIYTVMLAFRSGSDNLLVILKRKWWKYILLGLADVEANYVIVRAYQYTTLTSVQLLDCFGIPVLMALSWFILHARYRVIHFIAVAVCLLGVGTMVGADILAGREDNSGSDVLIGDILVLLGASLYAISNVCEEYIVKKLSRQEFLGMVGLFGTIISGIQLLIVEYKDIASIHWDWKIALLFVAFALCMFCLYSFMPLVIKVTSATSVNLGILTADLYSLFVGLFLFGYKFSGLYILSFTVIMVGFILYCSTPTRTAEPAESSVPPVTSIGIDNLGLKLEENLQETH<Phosphoserine>AVL'
+    # seq = "M<N-acetylalanine>K"
+    # output = mamba(seq)
+    # print(output.logits.shape)
+    # print(output.hidden_states.shape)
+
+    seq= "PEHPSGQSHGPPTPPTTPKTELQSGKADPKRDGRSMGEGGKPHIDFGNVDI"
+    output = mamba(seq)
+    print(output.logits.shape)
+    print(output.hidden_states.shape)
+
+    seq= "GQSHGPPTPPTTPKTELQSGKADPKRDGRSMGEGGKPHID"
     output = mamba(seq)
     print(output.logits.shape)
     print(output.hidden_states.shape)

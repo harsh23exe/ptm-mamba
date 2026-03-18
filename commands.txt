@@ -1,0 +1,16 @@
+Start terminal with gpu :
+sinteractive --gres=gpu:a100:1 
+
+Launch container with the gpu
+spack load /gfiltc4 or spack load /kcushwg
+apptainer shell --nv --bind ~/ptm-mamba/ apptainer/pytorch_23.12.sif 
+
+activate env :
+source ~/plm_native/bin/activate
+
+
+source "$HOME/.cargo/env"
+
+source ~/.cargo/env
+
+squeue --me

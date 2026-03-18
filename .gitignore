@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # C extensions
 *.so
 
@@ -160,6 +161,7 @@ cython_debug/
 #.idea/
 .vscode/
 .trunk/
+__MACOSX/
 wandb/
 checkpoints/
 ckpt/
@@ -174,3 +176,13 @@ protein_lm/evaluation/nonptm_vs_ptm_classification/data/clustering
 protein_lm/evaluation/nonptm_vs_ptm_classification/data
 protein_lm/evaluation/binding_site_prediction/data
 nohup.out
+
+# Project-specific ignores
+.cursor/
+apptainer/
+classifier_runs/*.pt
+acet_k/
+phos_y/
+sumo_k/
+crot_k/
+cursor.logs
