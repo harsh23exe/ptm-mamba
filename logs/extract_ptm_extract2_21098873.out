@@ -1,0 +1,24 @@
+=========================================
+Job ID      : 21098873
+Node        : skl-a-29
+PTM type    : sumo_k
+Started at  : Wed Mar 18 10:13:41 PM EDT 2026
+=========================================
+Triton patch applied: libcuda_dirs patched to include ~/my_libs.
+PTM type  : sumo_k
+Data root : datasets/sumo_k
+Output    : /ptm-mamba/features/sumo_k
+Checkpoint: ckpt/best.ckpt
+Device    : cuda:0
+Batch size: 64
+
+Loading PTMMamba model ...
+<All keys matched successfully>
+Model loaded.
+
+[WARNING] datasets/sumo_k/train.csv not found, skipping split 'train'.
+[WARNING] datasets/sumo_k/test.csv not found, skipping split 'test'.
+Feature extraction complete.
+=========================================
+Finished at : Wed Mar 18 10:16:21 PM EDT 2026
+=========================================

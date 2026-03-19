@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+*.csv
 
 # C extensions
 *.so
@@ -185,4 +186,5 @@ acet_k/
 phos_y/
 sumo_k/
 crot_k/
+met_r/
 cursor.logs

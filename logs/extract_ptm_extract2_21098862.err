@@ -1,0 +1,6 @@
+INFO:    underlay of /etc/localtime required more than 50 (94) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (477) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: for
+/usr/bin/bash: line 2: 406493 Killed                  python protein_lm/modeling/scripts/extract_features.py --ptm_type sumo_k --ckpt_path ckpt/best.ckpt --out_root features --batch_size 64 --device cuda:0 --data_root datasets/sumo_k
+[2026-03-18T22:05:03.852] error: Detected 1 oom_kill event in StepId=21098862.batch. Some of the step tasks have been OOM Killed.

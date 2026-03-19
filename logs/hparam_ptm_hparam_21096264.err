@@ -1,0 +1,40 @@
+[1;31m==>[0m Error: apptainer is alreaded loaded
+
+INFO:    underlay of /etc/localtime required more than 50 (94) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (477) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: for
+/usr/bin/bash: line 2: 270261 Killed                  python -m ptm_classification.scripts.hparam_search --ptm_type "${PTM}" --features_root features --output_root classifier_runs --batch_size 128 --num_epochs 35 --lr 1e-3 --weight_decay 1e-2 --val_size 0.15 --seed 42 --device cuda:0 --model_types "${MODEL_TYPES_ARR[@]}" --conv_layers_list "${CONV_LAYERS_ARR[@]}" --rnn_layers_list "${RNN_LAYERS_ARR[@]}"
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/ptm-mamba/ptm_classification/scripts/hparam_search.py", line 83, in <module>
+    main()
+  File "/ptm-mamba/ptm_classification/scripts/hparam_search.py", line 77, in main
+    run_dir = run_training(exp_args)
+  File "/ptm-mamba/ptm_classification/scripts/train_classifier.py", line 119, in run_training
+    train_ds = PTMFeaturesDataset(
+  File "/ptm-mamba/ptm_classification/datasets.py", line 50, in __init__
+    for row in reader:
+  File "/usr/lib/python3.10/csv.py", line 111, in __next__
+    row = next(self.reader)
+_csv.Error: field larger than field limit (131072)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/ptm-mamba/ptm_classification/scripts/hparam_search.py", line 83, in <module>
+    main()
+  File "/ptm-mamba/ptm_classification/scripts/hparam_search.py", line 77, in main
+    run_dir = run_training(exp_args)
+  File "/ptm-mamba/ptm_classification/scripts/train_classifier.py", line 119, in run_training
+    train_ds = PTMFeaturesDataset(
+  File "/ptm-mamba/ptm_classification/datasets.py", line 50, in __init__
+    for row in reader:
+  File "/usr/lib/python3.10/csv.py", line 111, in __next__
+    row = next(self.reader)
+_csv.Error: field larger than field limit (131072)
+[2026-03-17T21:32:48.188] error: Detected 1 oom_kill event in StepId=21096264.batch. Some of the step tasks have been OOM Killed.

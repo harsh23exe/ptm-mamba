@@ -1,20 +1,22 @@
 #!/bin/bash
-#SBATCH --job-name=ptm_extract
+#SBATCH --job-name=ptm_extract2
 #SBATCH --account=protmamba
-#SBATCH --partition=interactive
+#SBATCH --partition=tier3
 #SBATCH --gres=gpu:a100:1
-#SBATCH --time=8:00:00
+#SBATCH --time=02:00:00
+#SBATCH --mem=8g
 #SBATCH --output=logs/extract_%x_%j.out
 #SBATCH --error=logs/extract_%x_%j.err
 
 # ── configuration ─────────────────────────────────────────────────────────────
 # Change PTM_TYPE to switch to a different PTM (e.g. phospho_s, ubiq_k, etc.)
-PTM_TYPE=${PTM_TYPE:-sumo_k}
+PTM_TYPE=${PTM_TYPE:-met_r}
 
 CKPT_PATH="ckpt/best.ckpt"
 OUT_ROOT="features"
 BATCH_SIZE=64
 DEVICE="cuda:0"
+DATA_ROOT="datasets/$PTM_TYPE"
 # ──────────────────────────────────────────────────────────────────────────────
 
 mkdir -p logs
@@ -40,7 +42,8 @@ apptainer exec --nv \
             --ckpt_path  ${CKPT_PATH} \
             --out_root   ${OUT_ROOT} \
             --batch_size ${BATCH_SIZE} \
-            --device     ${DEVICE}
+            --device     ${DEVICE} \
+            --data_root  ${DATA_ROOT}
     "
 
 echo "========================================="

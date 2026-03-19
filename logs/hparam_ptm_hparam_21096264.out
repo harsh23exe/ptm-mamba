@@ -1,0 +1,19 @@
+=========================================
+Job ID          : 21096264
+Node            : skl-a-33
+PTM types       : crot_k phos_y sumo_k
+Model types     : cnn_gru cnn_bilstm
+Conv layers list: 1 2 3
+RNN layers list : 1 2 3
+Started at      : Tue Mar 17 09:31:37 PM EDT 2026
+=========================================
+===== Starting hyperparameter search for PTM_TYPE=crot_k =====
+===== Starting hyperparameter search for PTM_TYPE=phos_y =====
+
+=== Running config: model=cnn_gru, conv_layers=1, rnn_layers=1, epochs=35 ===
+===== Starting hyperparameter search for PTM_TYPE=sumo_k =====
+
+=== Running config: model=cnn_gru, conv_layers=1, rnn_layers=1, epochs=35 ===
+=========================================
+Finished at : Tue Mar 17 09:32:48 PM EDT 2026
+=========================================
