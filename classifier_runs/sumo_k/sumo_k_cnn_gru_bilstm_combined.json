@@ -1,0 +1,699 @@
+{
+  "ptm_type": "sumo_k",
+  "source_root": "classifier_runs/sumo_k",
+  "generated_from": "classifier_runs/sumo_k/<model_type>/<timestamp>/ (final epoch metrics only)",
+  "model_types": {
+    "cnn_gru": {
+      "runs": [
+        {
+          "timestamp": "20260320_112142",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_112142",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 1,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7282142190707221,
+            "precision": 0.7099398655818889,
+            "recall": 0.7592207300926802,
+            "f1": 0.7337537702221003,
+            "mcc": 0.4579035926558817,
+            "auroc": 0.8000551618274722,
+            "loss": 1.1641212013505755
+          },
+          "final_val_mcc": 0.4579035926558817
+        },
+        {
+          "timestamp": "20260320_120707",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_120707",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 1,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7193506251166263,
+            "precision": 0.7257776897166633,
+            "recall": 0.692831473425383,
+            "f1": 0.7089220050319334,
+            "mcc": 0.4387027092983952,
+            "auroc": 0.7925689436647603,
+            "loss": 1.0102378809381098
+          },
+          "final_val_mcc": 0.4387027092983952
+        },
+        {
+          "timestamp": "20260320_125719",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_125719",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 1,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7186042172047024,
+            "precision": 0.70529741457241,
+            "recall": 0.737847550595801,
+            "f1": 0.7212053984100574,
+            "mcc": 0.4379047593037255,
+            "auroc": 0.7858528631823343,
+            "loss": 1.118108390165227
+          },
+          "final_val_mcc": 0.4379047593037255
+        },
+        {
+          "timestamp": "20260320_134350",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_134350",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 2,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7008770292965105,
+            "precision": 0.668229587712207,
+            "recall": 0.7817287686778892,
+            "f1": 0.720536959553696,
+            "mcc": 0.4087458260905017,
+            "auroc": 0.7678234363203037,
+            "loss": 1.2366715226145018
+          },
+          "final_val_mcc": 0.4087458260905017
+        },
+        {
+          "timestamp": "20260320_142949",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_142949",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 2,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7244821795111028,
+            "precision": 0.7062566277836692,
+            "recall": 0.7558161528276905,
+            "f1": 0.7301964367291001,
+            "mcc": 0.45045623923842026,
+            "auroc": 0.7823583985022897,
+            "loss": 1.2230446601197833
+          },
+          "final_val_mcc": 0.45045623923842026
+        },
+        {
+          "timestamp": "20260320_151545",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_151545",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 2,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.704049262922187,
+            "precision": 0.7355758520828692,
+            "recall": 0.6245507849442028,
+            "f1": 0.675531914893617,
+            "mcc": 0.41141170030121826,
+            "auroc": 0.7774836517916867,
+            "loss": 1.1188184347535883
+          },
+          "final_val_mcc": 0.41141170030121826
+        },
+        {
+          "timestamp": "20260320_160242",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_160242",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 3,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7072214965478634,
+            "precision": 0.6843369360096071,
+            "recall": 0.7544921505579724,
+            "f1": 0.7177042101475352,
+            "mcc": 0.41726669323588234,
+            "auroc": 0.7689426234455284,
+            "loss": 0.9625583406360376
+          },
+          "final_val_mcc": 0.41726669323588234
+        },
+        {
+          "timestamp": "20260320_164753",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_164753",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 3,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7061951856689681,
+            "precision": 0.7223377703826955,
+            "recall": 0.656894268961604,
+            "f1": 0.6880633977216445,
+            "mcc": 0.41323614246848805,
+            "auroc": 0.7761631321804363,
+            "loss": 1.0491683178004765
+          },
+          "final_val_mcc": 0.41323614246848805
+        },
+        {
+          "timestamp": "20260320_173419",
+          "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_173419",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 3,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.5067176712073148,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6932015557374273
+          },
+          "final_val_mcc": 0.0
+        }
+      ],
+      "best_run_by_final_val_mcc": {
+        "timestamp": "20260320_112142",
+        "run_dir": "classifier_runs/sumo_k/cnn_gru/20260320_112142",
+        "config": {
+          "ptm_type": "sumo_k",
+          "features_root": "features",
+          "output_root": "classifier_runs",
+          "batch_size": 64,
+          "num_epochs": 35,
+          "lr": 0.001,
+          "weight_decay": 0.01,
+          "val_size": 0.15,
+          "seed": 42,
+          "device": "cuda:0",
+          "model_type": "cnn_gru",
+          "conv_layers": 1,
+          "rnn_layers": 1,
+          "class_weights": [
+            0.9866946339607239,
+            1.0136691331863403
+          ]
+        },
+        "final_epoch": 35,
+        "final_metrics_val": {
+          "accuracy": 0.7282142190707221,
+          "precision": 0.7099398655818889,
+          "recall": 0.7592207300926802,
+          "f1": 0.7337537702221003,
+          "mcc": 0.4579035926558817,
+          "auroc": 0.8000551618274722,
+          "loss": 1.1641212013505755
+        },
+        "final_val_mcc": 0.4579035926558817
+      },
+      "num_runs": 9,
+      "num_runs_with_final_metrics": 9
+    },
+    "cnn_bilstm": {
+      "runs": [
+        {
+          "timestamp": "20260320_182107",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_182107",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 1,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7265348012688935,
+            "precision": 0.7276768457672981,
+            "recall": 0.7121240779269907,
+            "f1": 0.7198164611413823,
+            "mcc": 0.4529166076847778,
+            "auroc": 0.7996654175183363,
+            "loss": 1.12856694736651
+          },
+          "final_val_mcc": 0.4529166076847778
+        },
+        {
+          "timestamp": "20260320_190629",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_190629",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 1,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7298936368725508,
+            "precision": 0.7331384015594542,
+            "recall": 0.7113675052014374,
+            "f1": 0.722088893155419,
+            "mcc": 0.45967448535759703,
+            "auroc": 0.8073241665815447,
+            "loss": 1.2389469939683164
+          },
+          "final_val_mcc": 0.45967448535759703
+        },
+        {
+          "timestamp": "20260320_195324",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_195324",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 1,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7356782981899608,
+            "precision": 0.7245607613469985,
+            "recall": 0.748817855116323,
+            "f1": 0.7364896288717327,
+            "mcc": 0.47175296948424755,
+            "auroc": 0.809478661002796,
+            "loss": 1.1426575847324871
+          },
+          "final_val_mcc": 0.47175296948424755
+        },
+        {
+          "timestamp": "20260320_204440",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_204440",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 2,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.709460720283635,
+            "precision": 0.696438257096366,
+            "recall": 0.7285795347077738,
+            "f1": 0.7121464226289518,
+            "mcc": 0.4196066876928614,
+            "auroc": 0.7687983543184982,
+            "loss": 1.1703849825121106
+          },
+          "final_val_mcc": 0.4196066876928614
+        },
+        {
+          "timestamp": "20260320_212936",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_212936",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 2,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.5067176712073148,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6931542353261084
+          },
+          "final_val_mcc": 0.0
+        },
+        {
+          "timestamp": "20260320_221631",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_221631",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 2,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.5067176712073148,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6931471860124951
+          },
+          "final_val_mcc": 0.0
+        },
+        {
+          "timestamp": "20260320_230519",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_230519",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 3,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.5067176712073148,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6931481925504548
+          },
+          "final_val_mcc": 0.0
+        },
+        {
+          "timestamp": "20260320_235038",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_235038",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 3,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.5067176712073148,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6931723948745501
+          },
+          "final_val_mcc": 0.0
+        },
+        {
+          "timestamp": "20260321_003815",
+          "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260321_003815",
+          "config": {
+            "ptm_type": "sumo_k",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 3,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.9866946339607239,
+              1.0136691331863403
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.4932823287926852,
+            "precision": 0.4932823287926852,
+            "recall": 1.0,
+            "f1": 0.6606685410809121,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6931484497728801
+          },
+          "final_val_mcc": 0.0
+        }
+      ],
+      "best_run_by_final_val_mcc": {
+        "timestamp": "20260320_195324",
+        "run_dir": "classifier_runs/sumo_k/cnn_bilstm/20260320_195324",
+        "config": {
+          "ptm_type": "sumo_k",
+          "features_root": "features",
+          "output_root": "classifier_runs",
+          "batch_size": 64,
+          "num_epochs": 35,
+          "lr": 0.001,
+          "weight_decay": 0.01,
+          "val_size": 0.15,
+          "seed": 42,
+          "device": "cuda:0",
+          "model_type": "cnn_bilstm",
+          "conv_layers": 1,
+          "rnn_layers": 3,
+          "class_weights": [
+            0.9866946339607239,
+            1.0136691331863403
+          ]
+        },
+        "final_epoch": 35,
+        "final_metrics_val": {
+          "accuracy": 0.7356782981899608,
+          "precision": 0.7245607613469985,
+          "recall": 0.748817855116323,
+          "f1": 0.7364896288717327,
+          "mcc": 0.47175296948424755,
+          "auroc": 0.809478661002796,
+          "loss": 1.1426575847324871
+        },
+        "final_val_mcc": 0.47175296948424755
+      },
+      "num_runs": 9,
+      "num_runs_with_final_metrics": 9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+=========================================
+Job ID      : 21099127
+Node        : skl-a-32
+PTM type    : met_r
+Started at  : Wed Mar 18 11:11:15 PM EDT 2026
+=========================================
+Triton patch applied: libcuda_dirs patched to include ~/my_libs.
+PTM type  : met_r
+Data root : datasets/met_r
+Output    : /ptm-mamba/features/met_r
+Checkpoint: ckpt/best.ckpt
+Device    : cuda:0
+Batch size: 64
+
+Loading PTMMamba model ...
+<All keys matched successfully>
+Model loaded.
+
+Processing split: train  (datasets/met_r/train.csv)
+    Wrote: /ptm-mamba/features/met_r/train.csv.gz
+  Done.
+
+Processing split: test  (datasets/met_r/test.csv)
+    Wrote: /ptm-mamba/features/met_r/test.csv.gz
+  Done.
+
+Feature extraction complete.
+=========================================
+Finished at : Wed Mar 18 11:24:06 PM EDT 2026
+=========================================

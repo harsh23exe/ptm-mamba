@@ -181,7 +181,8 @@ nohup.out
 # Project-specific ignores
 .cursor/
 apptainer/
-classifier_runs/*.pt
+# Track JSON in classifier_runs; ignore PyTorch checkpoints (any depth)
+classifier_runs/**/*.pt
 acet_k/
 phos_y/
 sumo_k/

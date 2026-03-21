@@ -1,0 +1,699 @@
+{
+  "ptm_type": "phos_y",
+  "source_root": "classifier_runs/phos_y",
+  "generated_from": "classifier_runs/phos_y/<model_type>/<timestamp>/ (final epoch metrics only)",
+  "model_types": {
+    "cnn_gru": {
+      "runs": [
+        {
+          "timestamp": "20260320_232106",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260320_232106",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 1,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8126915654444319,
+            "precision": 0.4758364312267658,
+            "recall": 0.5747273893521488,
+            "f1": 0.5206275421266706,
+            "mcc": 0.40830419904798326,
+            "auroc": 0.8083596469885648,
+            "loss": 1.3669977510968845
+          },
+          "final_val_mcc": 0.40830419904798326
+        },
+        {
+          "timestamp": "20260320_235900",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260320_235900",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 1,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.834941537064366,
+            "precision": 0.5356415478615071,
+            "recall": 0.5060936497754971,
+            "f1": 0.5204485488126649,
+            "mcc": 0.4211079027062408,
+            "auroc": 0.8051865254031099,
+            "loss": 1.6090305260774018
+          },
+          "final_val_mcc": 0.4211079027062408
+        },
+        {
+          "timestamp": "20260321_003559",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_003559",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 1,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.7958905664661142,
+            "precision": 0.4456076467910787,
+            "recall": 0.6279666452854393,
+            "f1": 0.5212992545260916,
+            "mcc": 0.4057298400009586,
+            "auroc": 0.8092026719161267,
+            "loss": 1.1662265196226644
+          },
+          "final_val_mcc": 0.4057298400009586
+        },
+        {
+          "timestamp": "20260321_011115",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_011115",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 2,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8341468952207969,
+            "precision": 0.535,
+            "recall": 0.4804361770365619,
+            "f1": 0.5062521122000676,
+            "mcc": 0.4077823027241548,
+            "auroc": 0.7635520116785738,
+            "loss": 1.4643937785556351
+          },
+          "final_val_mcc": 0.4077823027241548
+        },
+        {
+          "timestamp": "20260321_014355",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_014355",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 2,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8229083891474628,
+            "precision": 0.49971313826735514,
+            "recall": 0.5586914688903143,
+            "f1": 0.5275590551181103,
+            "mcc": 0.4199934879327145,
+            "auroc": 0.7669107960452102,
+            "loss": 1.2616739521423976
+          },
+          "final_val_mcc": 0.4199934879327145
+        },
+        {
+          "timestamp": "20260321_021725",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_021725",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 2,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8123510046543307,
+            "precision": 0.4740331491712707,
+            "recall": 0.5503527902501604,
+            "f1": 0.5093499554764025,
+            "mcc": 0.3958154956065749,
+            "auroc": 0.7761671717060008,
+            "loss": 1.466890132513599
+          },
+          "final_val_mcc": 0.3958154956065749
+        },
+        {
+          "timestamp": "20260321_025300",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_025300",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 3,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8468611647179022,
+            "precision": 0.5785928143712575,
+            "recall": 0.49583066067992304,
+            "f1": 0.5340241796200346,
+            "mcc": 0.44493842519735344,
+            "auroc": 0.8133431686978833,
+            "loss": 1.4318684579237648
+          },
+          "final_val_mcc": 0.44493842519735344
+        },
+        {
+          "timestamp": "20260321_033116",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_033116",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 3,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8416392326030196,
+            "precision": 0.5607407407407408,
+            "recall": 0.48556767158434894,
+            "f1": 0.5204537641801307,
+            "mcc": 0.42778330785600344,
+            "auroc": 0.8024344960297274,
+            "loss": 1.777036782624065
+          },
+          "final_val_mcc": 0.42778330785600344
+        },
+        {
+          "timestamp": "20260321_040550",
+          "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_040550",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_gru",
+            "conv_layers": 3,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8063344306958792,
+            "precision": 0.45797598627787306,
+            "recall": 0.5137908915971777,
+            "f1": 0.48428053204353083,
+            "mcc": 0.36646303236774846,
+            "auroc": 0.7846508593041517,
+            "loss": 0.891984507009603
+          },
+          "final_val_mcc": 0.36646303236774846
+        }
+      ],
+      "best_run_by_final_val_mcc": {
+        "timestamp": "20260321_025300",
+        "run_dir": "classifier_runs/phos_y/cnn_gru/20260321_025300",
+        "config": {
+          "ptm_type": "phos_y",
+          "features_root": "features",
+          "output_root": "classifier_runs",
+          "batch_size": 64,
+          "num_epochs": 35,
+          "lr": 0.001,
+          "weight_decay": 0.01,
+          "val_size": 0.15,
+          "seed": 42,
+          "device": "cuda:0",
+          "model_type": "cnn_gru",
+          "conv_layers": 3,
+          "rnn_layers": 1,
+          "class_weights": [
+            0.6075419187545776,
+            2.824674606323242
+          ]
+        },
+        "final_epoch": 35,
+        "final_metrics_val": {
+          "accuracy": 0.8468611647179022,
+          "precision": 0.5785928143712575,
+          "recall": 0.49583066067992304,
+          "f1": 0.5340241796200346,
+          "mcc": 0.44493842519735344,
+          "auroc": 0.8133431686978833,
+          "loss": 1.4318684579237648
+        },
+        "final_val_mcc": 0.44493842519735344
+      },
+      "num_runs": 9,
+      "num_runs_with_final_metrics": 9
+    },
+    "cnn_bilstm": {
+      "runs": [
+        {
+          "timestamp": "20260321_044334",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_044334",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 1,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8260869565217391,
+            "precision": 0.508760545100584,
+            "recall": 0.5028864656831302,
+            "f1": 0.5058064516129032,
+            "mcc": 0.4002965294964154,
+            "auroc": 0.8061434606622282,
+            "loss": 1.517168276335882
+          },
+          "final_val_mcc": 0.4002965294964154
+        },
+        {
+          "timestamp": "20260321_052218",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_052218",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 1,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8207515041434896,
+            "precision": 0.49430523917995445,
+            "recall": 0.5567671584348942,
+            "f1": 0.5236802413273002,
+            "mcc": 0.4148748345927951,
+            "auroc": 0.7991082258742341,
+            "loss": 1.3561377086933109
+          },
+          "final_val_mcc": 0.4148748345927951
+        },
+        {
+          "timestamp": "20260321_060248",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_060248",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 1,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8215461459870587,
+            "precision": 0.49635036496350365,
+            "recall": 0.5670301475304682,
+            "f1": 0.5293413173652693,
+            "mcc": 0.42125769152830095,
+            "auroc": 0.8107747229656499,
+            "loss": 1.620311442060747
+          },
+          "final_val_mcc": 0.42125769152830095
+        },
+        {
+          "timestamp": "20260321_064504",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_064504",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 2,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8222272675672607,
+            "precision": 0.49794480328831475,
+            "recall": 0.5439384220654265,
+            "f1": 0.5199264255058246,
+            "mcc": 0.4117079619094928,
+            "auroc": 0.7981527504368405,
+            "loss": 1.7145215326893157
+          },
+          "final_val_mcc": 0.4117079619094928
+        },
+        {
+          "timestamp": "20260321_072503",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_072503",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 2,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8230219094108299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6930465585943582
+          },
+          "final_val_mcc": 0.0
+        },
+        {
+          "timestamp": "20260321_080619",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_080619",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 2,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8230219094108299,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "mcc": 0.0,
+            "auroc": 0.5,
+            "loss": 0.6932266803755276
+          },
+          "final_val_mcc": 0.0
+        },
+        {
+          "timestamp": "20260321_084309",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_084309",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 3,
+            "rnn_layers": 1,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.846066522874333,
+            "precision": 0.5884917175239756,
+            "recall": 0.43296985246953174,
+            "f1": 0.49889135254988914,
+            "mcc": 0.41718569208184014,
+            "auroc": 0.7988424056092543,
+            "loss": 1.5818822214352912
+          },
+          "final_val_mcc": 0.41718569208184014
+        },
+        {
+          "timestamp": "20260321_091713",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_091713",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 3,
+            "rnn_layers": 2,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8426609149733227,
+            "precision": 0.5739948674080411,
+            "recall": 0.4304041051956382,
+            "f1": 0.4919354838709677,
+            "mcc": 0.4069152672104459,
+            "auroc": 0.8055670522660414,
+            "loss": 2.11339281283427
+          },
+          "final_val_mcc": 0.4069152672104459
+        },
+        {
+          "timestamp": "20260321_095214",
+          "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_095214",
+          "config": {
+            "ptm_type": "phos_y",
+            "features_root": "features",
+            "output_root": "classifier_runs",
+            "batch_size": 64,
+            "num_epochs": 35,
+            "lr": 0.001,
+            "weight_decay": 0.01,
+            "val_size": 0.15,
+            "seed": 42,
+            "device": "cuda:0",
+            "model_type": "cnn_bilstm",
+            "conv_layers": 3,
+            "rnn_layers": 3,
+            "class_weights": [
+              0.6075419187545776,
+              2.824674606323242
+            ]
+          },
+          "final_epoch": 35,
+          "final_metrics_val": {
+            "accuracy": 0.8225678283573618,
+            "precision": 0.4987937273823884,
+            "recall": 0.5304682488774856,
+            "f1": 0.5141436120609263,
+            "mcc": 0.4060229343318812,
+            "auroc": 0.8038636614983078,
+            "loss": 1.3939439498859902
+          },
+          "final_val_mcc": 0.4060229343318812
+        }
+      ],
+      "best_run_by_final_val_mcc": {
+        "timestamp": "20260321_060248",
+        "run_dir": "classifier_runs/phos_y/cnn_bilstm/20260321_060248",
+        "config": {
+          "ptm_type": "phos_y",
+          "features_root": "features",
+          "output_root": "classifier_runs",
+          "batch_size": 64,
+          "num_epochs": 35,
+          "lr": 0.001,
+          "weight_decay": 0.01,
+          "val_size": 0.15,
+          "seed": 42,
+          "device": "cuda:0",
+          "model_type": "cnn_bilstm",
+          "conv_layers": 1,
+          "rnn_layers": 3,
+          "class_weights": [
+            0.6075419187545776,
+            2.824674606323242
+          ]
+        },
+        "final_epoch": 35,
+        "final_metrics_val": {
+          "accuracy": 0.8215461459870587,
+          "precision": 0.49635036496350365,
+          "recall": 0.5670301475304682,
+          "f1": 0.5293413173652693,
+          "mcc": 0.42125769152830095,
+          "auroc": 0.8107747229656499,
+          "loss": 1.620311442060747
+        },
+        "final_val_mcc": 0.42125769152830095
+      },
+      "num_runs": 9,
+      "num_runs_with_final_metrics": 9
+    }
+  }
+}

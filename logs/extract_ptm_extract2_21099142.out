@@ -1,0 +1,30 @@
+=========================================
+Job ID      : 21099142
+Node        : skl-a-36
+PTM type    : phos_y
+Started at  : Wed Mar 18 11:20:20 PM EDT 2026
+=========================================
+Triton patch applied: libcuda_dirs patched to include ~/my_libs.
+PTM type  : phos_y
+Data root : datasets/phos_y
+Output    : /ptm-mamba/features/phos_y
+Checkpoint: ckpt/best.ckpt
+Device    : cuda:0
+Batch size: 64
+
+Loading PTMMamba model ...
+<All keys matched successfully>
+Model loaded.
+
+Processing split: train  (datasets/phos_y/train.csv)
+    Wrote: /ptm-mamba/features/phos_y/train.csv.gz
+  Done.
+
+Processing split: test  (datasets/phos_y/test.csv)
+    Wrote: /ptm-mamba/features/phos_y/test.csv.gz
+  Done.
+
+Feature extraction complete.
+=========================================
+Finished at : Wed Mar 18 11:35:36 PM EDT 2026
+=========================================

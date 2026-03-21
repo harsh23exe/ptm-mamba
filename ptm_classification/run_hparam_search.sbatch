@@ -3,11 +3,11 @@
 #SBATCH --account=protmamba
 #SBATCH --partition=tier3
 #SBATCH --gres=gpu:a100:1
-#SBATCH --time=2-00:00:00
+#SBATCH --time=18:00:00          # Reduced from 2 days to 18 hours
 #SBATCH --output=logs/hparam_%x_%j.out
 #SBATCH --error=logs/hparam_%x_%j.err
-#SBATCH --mem=32g
-#SBATCH --cpus-per-task=8
+#SBATCH --mem=16g                # Reduced from 32g to 16g (giving a small buffer over 13g)
+#SBATCH --cpus-per-task=1        # Reduced from 4 to 1 based on actual usage
 
 # ── configuration ─────────────────────────────────────────────────────────────
 # Single PTM type per run (matches the original acet_k workflow).
