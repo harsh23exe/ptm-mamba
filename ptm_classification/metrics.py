@@ -30,6 +30,11 @@ def compute_binary_metrics(y_true, y_prob, threshold: float = 0.5) -> Dict[str, 
     except Exception:
         out["auroc"] = float("nan")
 
+    try:
+        out["aupr"] = float(metrics.average_precision_score(y_true, y_prob))
+    except Exception:
+        out["aupr"] = float("nan")
+
     return out
 
 

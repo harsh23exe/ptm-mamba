@@ -1,0 +1,13 @@
+=========================================
+Job ID          : 21118237
+Node            : skl-a-49
+PTM types       : acet_k,phos_s,phos_t,phos_y
+Model type      : cnn_gru
+Batch size      : 256
+Grad accum      : 2
+GPUs            : 2 x A100
+Started at      : Thu Mar 26 01:29:26 AM EDT 2026
+=========================================
+=========================================
+Finished at : Thu Mar 26 01:31:30 AM EDT 2026
+=========================================

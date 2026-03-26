@@ -1,0 +1,18 @@
+INFO:    underlay of /etc/localtime required more than 50 (94) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (477) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: for
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/ptm-mamba/multip_ptm_classification/scripts/train_multip.py", line 415, in <module>
+    main()
+  File "/ptm-mamba/multip_ptm_classification/scripts/train_multip.py", line 411, in main
+    run_training(args)
+  File "/ptm-mamba/multip_ptm_classification/scripts/train_multip.py", line 187, in run_training
+    full_train = MultiPTMFeaturesDataset(
+  File "/ptm-mamba/multip_ptm_classification/datasets.py", line 60, in __init__
+    raise FileNotFoundError(
+FileNotFoundError: Features for PTM 'phos_s' split 'train' not found: features/phos_s/train.csv.gz
