@@ -171,9 +171,9 @@ Output is saved as both CSV and JSON. Console prints a table like:
 ptm              mcc       f1    auroc     aupr  precision   recall   n_rows
 ------------------------------------------------------------------------
 acet_k         0.3095   0.6953   0.7191   0.7129     0.6282   0.7786     5559
-met_r          0.3351   0.4813   0.7506   0.5008     0.4811   0.4816     4449
 phos_y         0.3318   0.4405   0.7909   0.4535     0.4720   0.4129     5814
 sumo_k         0.3388   0.6619   0.7350   0.6535     0.5594   0.8106     8615
+met_r          0.3351   0.4813   0.7506   0.5008     0.4811   0.4816     4449
 ```
 
 ## Comparing to Single-PTM Models
