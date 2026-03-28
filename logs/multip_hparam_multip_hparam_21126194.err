@@ -1,0 +1,6 @@
+INFO:    underlay of /etc/localtime required more than 50 (94) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (477) bind mounts
+13:4: not a valid test operator: (
+13:4: not a valid test operator: for
+/usr/bin/bash: line 2: 4190966 Killed                  python -m multip_ptm_classification.scripts.hparam_search --ptm_types acet_k,met_r,phos_y,sumo_k --features_root features --output_root classifier_runs --batch_size 64 --num_epochs 35 --lr 1e-3 --weight_decay 1e-2 --val_size 0.15 --seed 42 --device cuda:0 --condition_on_ptm --balance_ptm_batches --amp --num_workers 2 --prefetch_factor 2 --model_types cnn_gru --conv_layers_list 1 2 3 --rnn_layers_list 1 2 3 --lr_list 1e-3 5e-4 --ptm_embed_dim_list 32
+[2026-03-28T04:36:42.053] error: Detected 3 oom_kill events in StepId=21126194.batch. Some of the step tasks have been OOM Killed.

@@ -1,0 +1,34 @@
+{
+  "ptm_types": "acet_k,met_r,phos_y,sumo_k",
+  "features_root": "features",
+  "output_root": "classifier_runs",
+  "batch_size": 64,
+  "num_epochs": 35,
+  "weight_decay": 0.01,
+  "val_size": 0.15,
+  "seed": 42,
+  "device": "cuda:0",
+  "condition_on_ptm": true,
+  "balance_ptm_batches": true,
+  "amp": true,
+  "data_parallel": false,
+  "grad_accum_steps": 1,
+  "num_workers": 2,
+  "prefetch_factor": 2,
+  "model_type": "cnn_gru",
+  "conv_layers": 1,
+  "rnn_layers": 3,
+  "lr": 0.0005,
+  "ptm_embed_dim": 32,
+  "ptm_types_resolved": [
+    "acet_k",
+    "met_r",
+    "phos_y",
+    "sumo_k"
+  ],
+  "class_weights": [
+    0.7653597593307495,
+    1.4421172142028809
+  ],
+  "num_cuda_visible": 1
+}

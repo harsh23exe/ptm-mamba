@@ -1,0 +1,14 @@
+=========================================
+Job ID            : 21125284
+Node              : skl-a-50
+PTM types         : acet_k,met_r,phos_y,sumo_k
+Model types       : cnn_gru
+Conv layers list  : 1 2 3
+RNN layers list   : 1 2 3
+LR list           : 1e-3 5e-4
+PTM embed dim list: 32
+Started at        : Fri Mar 27 06:12:52 PM EDT 2026
+=========================================
+=========================================
+Finished at : Fri Mar 27 06:20:14 PM EDT 2026
+=========================================
